@@ -130,6 +130,8 @@ a {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 8rem;
+    letter-spacing: 2rem;
+    text-align: center;
 }
 
 .hero-img {
@@ -138,10 +140,7 @@ a {
     object-fit: cover;
 }
 
-h1 {
-    letter-spacing: 2rem;
-    text-align: center;
-}
+
 
 
 
@@ -190,5 +189,63 @@ h1 {
 
     .fa-bars-staggered {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1255px){
+    #hero-text {
+        font-size: 5.5rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #hero-text {
+        font-size: 5rem;
+        letter-spacing: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    #hero-text {
+        font-size: 4.5rem;
+        letter-spacing: 1.2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 700px){
+    #hero-text {
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+}
+
+@media screen and (max-width: 602px){
+    #hero-text {
+        font-size: 3.5rem;
+        letter-spacing: 1rem;
+    }
+}
+
+@media screen and (max-width: 538px){
+    #hero-text {
+        font-size: 3.5rem;
+        letter-spacing: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 440px){
+    #hero-text {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 368px){
+    #hero-text {
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
     }
 }
