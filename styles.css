@@ -11,6 +11,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     /* background: black; */
+    height: 100%;
 }
 
 :root {
