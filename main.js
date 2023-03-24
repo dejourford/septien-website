@@ -4,6 +4,7 @@ const mobileNav = document.querySelector('.mobile-nav')
 const heroSection = document.querySelector('.hero')
 const mainNav = document.querySelector('.main-nav')
 const mainLinks = document.querySelector('.main-links')
+
 closeMenu = () => {
     mobileNav.classList.remove('show')
     mobileNav.classList.add('close')
@@ -39,13 +40,24 @@ function textSequence(i) {
 
 // CHANGE NAV COLOR ON SCROLL
 // trigger this function every time the user scrolls
+const scroll = window.pageYOffset;
+if (scroll == 0) {
+    // white text
+    mainLinks.style.color = 'white'
+    
+} 
+
+
+
 window.onscroll = function (event) {
-    var scroll = window.pageYOffset;
+    
+    const scroll = window.pageYOffset;
+    
     if (scroll == 0 || scroll < 800) {
         // transparent
         mainNav.style.background = 'transparent';
-        mainNav.style.transition = '0.5s'
         mainLinks.style.color = 'white'
+        mainNav.style.transition = '0.5s'
         mainLinks.style.transition = '0.5s'
         
     } 

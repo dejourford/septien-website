@@ -40,7 +40,7 @@ a {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 1em;
+    padding: 2em;
 }
 
 .mobile-nav {
@@ -101,7 +101,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 2em;
-    padding: 1em 2em;
+    padding: 2em 2em;
     background: transparent;
     position: fixed;
     width: 100%;
@@ -172,7 +172,11 @@ h1 {
 }
 
 
-
+/* ABOUT SECTION */
+.about {
+    display: flex;
+    padding: 10em;
+}
 
 
 
