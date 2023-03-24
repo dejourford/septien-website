@@ -159,7 +159,7 @@ h1 {
 
 /* FEATURE SECTION */
 .ballet {
-    height: 125vh;
+    height: 100vh;
     background-image: url(images/hero-image.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -168,7 +168,7 @@ h1 {
 
 
 .microphone {
-    height: 125vh;
+    height: 100vh;
     background-image: url(images/microphone.jpg);
     background-attachment: fixed;
     background-size: cover;
