@@ -2,7 +2,8 @@
 
 const mobileNav = document.querySelector('.mobile-nav')
 const heroSection = document.querySelector('.hero')
-
+const mainNav = document.querySelector('.main-nav')
+const mainLinks = document.querySelector('.main-links')
 closeMenu = () => {
     mobileNav.classList.remove('show')
     mobileNav.classList.add('close')
@@ -26,7 +27,7 @@ function textSequence(i) {
 
     if (words.length > i) {
         setTimeout(function() {
-            document.getElementById("hero-text").innerHTML = words[i];
+            document.querySelector("h1").innerHTML = words[i];
             textSequence(++i);
         }, 2000); // 1 second (in milliseconds)
 
@@ -34,4 +35,23 @@ function textSequence(i) {
         textSequence(0);
     }
 
+}
+
+// CHANGE NAV COLOR ON SCROLL
+// trigger this function every time the user scrolls
+window.onscroll = function (event) {
+    var scroll = window.pageYOffset;
+    if (scroll == 0 || scroll < 800) {
+        // transparent
+        mainNav.style.background = 'transparent';
+        mainNav.style.transition = '0.5s'
+        mainLinks.style.color = 'white'
+        mainLinks.style.transition = '0.5s'
+        
+    } 
+    else {
+        // if anywhere other than hero section
+        mainNav.style.background = 'white';
+        mainLinks.style.color = 'black'
+    }
 }

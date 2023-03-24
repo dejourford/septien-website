@@ -102,7 +102,7 @@ a {
     justify-content: space-between;
     gap: 2em;
     padding: 1em 2em;
-    background: white;
+    background: transparent;
     position: fixed;
     width: 100%;
     z-index: 9999999;
@@ -131,7 +131,7 @@ a {
 }
 
 /* HERO SECTION */
-.hero {
+.hero-text {
     background-attachment: fixed;
     background-image: url('images/dance-background.jpg');
     height: 100dvh;
@@ -142,7 +142,7 @@ a {
 }
 
 
-#hero-text {
+h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -159,7 +159,6 @@ a {
     background-image: url(images/hero-image.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-position:top;
 }
 
 
