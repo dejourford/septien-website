@@ -204,9 +204,17 @@ h1 {
 
 .about-content {
     display: flex;
-    gap: 30em;
-    
-    
+    justify-content: center; 
+    gap: 8em;
+}
+
+.about-text {
+    padding: 0em 10em;
+    font-size: 1.2rem;
+    font-weight: var(--medium-font-weight);
+    text-align: justify;
+    line-height: 1.7rem;
+    letter-spacing: 0.1rem;
 }
 
 #linda {
