@@ -14,7 +14,7 @@
         <header>
             
             <nav class="mobile-nav">
-                <ul class="links">
+                <ul class="mobile-links">
                     <a href="#"><li>Home</li></a>
                     <a href="#"><li>About</li></a>
                     <a href="#"><li>Services</li></a>
@@ -27,18 +27,20 @@
                 </ul>
                 <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </nav>
-            <img src="images/septien-header-logo.png" alt="">
+            
             <nav class="main-nav">
-                <ul class="links">
+                <img id="logo" src="images/septien-header-logo.png" alt="">
+                <ul class="main-links ">
                     <a href="#"><li>Home</li></a>
                     <a href="#"><li>About</li></a>
                     <a href="#"><li>Services</li></a>
                     <a href="#"><li>Alumni</li></a>
                     <a href="#"><li>Contact</li></a> 
                 </ul>
-                <div class="fa-solid fa-bars-staggered"></div>
+                <i class="fa-solid fa-bars-staggered" onclick="showMenu()"></i>
             </nav>
         </header>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

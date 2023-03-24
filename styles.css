@@ -19,6 +19,9 @@ body {
     --bd-font-weight: 800; 
 }
 
+h1, h2, h3, h4 {
+    font-weight: var(--bd-font-weight);
+}
 
 li {
     list-style: none;
@@ -43,19 +46,34 @@ a {
 .mobile-nav {
     background: black;
     height: 100dvh;
+    width: 100%;
     z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: -3000px;
 }
 
-.links {
+.close {
+    left: -3000px;
+    transition: 0.5s ease-in-out;
+}
+
+.show {
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.mobile-links {
     color: white;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: var(--bd-font-weight);
 }
 
@@ -65,4 +83,46 @@ a {
     font-size: 3em;
 }
 
+/* MAIN NAV */
+#logo {
+    cursor: pointer;
+}
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+}
+
+
+.main-links {
+    color: black;
+    gap: 1.5em;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: var(--medium-font-weight);
+    display: flex;
+}
+
+.fa-bars-staggered {
+    font-size: 2em;
+    display: none;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px){
+    .main-links {
+        display: none;
+    }
+
+    .main-nav {
+        justify-content: space-between;
+    }
+
+    .fa-bars-staggered {
+        display: block;
+    }
+}
