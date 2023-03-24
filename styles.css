@@ -86,6 +86,7 @@ a {
 /* MAIN NAV */
 #logo {
     cursor: pointer;
+    z-index: 999999;
 }
 
 .main-nav {
@@ -94,6 +95,9 @@ a {
     justify-content: space-between;
     gap: 2em;
     padding: 2em;
+    background: white;
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -106,10 +110,72 @@ a {
     display: flex;
 }
 
+.main-links a:hover {
+    text-decoration: 4px red underline;
+}
+
 .fa-bars-staggered {
     font-size: 2em;
     display: none;
 }
+
+/* HERO SECTION */
+
+
+
+#hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 8rem;
+}
+
+.hero-img {
+    height: 100dvh;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    letter-spacing: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES */
