@@ -16,7 +16,7 @@ body {
 :root {
     --small-font-weight: 100;
     --medium-font-weight: 400;
-    --bd-font-weight: 900; 
+    --bd-font-weight: 800; 
 }
 
 
@@ -26,5 +26,43 @@ li {
 
 a {
     text-decoration: none;
+    color: inherit;
+
 }
+
+/* MOBILE NAV */
+.fa-xmark {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1em;
+}
+
+.mobile-nav {
+    background: black;
+    height: 100dvh;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: var(--bd-font-weight);
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5em;
+    font-size: 3em;
+}
+
 
