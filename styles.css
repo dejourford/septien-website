@@ -75,12 +75,19 @@ a {
     align-items: center;
     font-size: 1.7rem;
     font-weight: var(--bd-font-weight);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
 
 .social-links {
     display: flex;
     gap: 1.5em;
     font-size: 3em;
+    cursor: pointer;
+}
+
+.fa-facebook:hover, .fa-youtube:hover {
+    color: red;
 }
 
 /* MAIN NAV */
@@ -106,8 +113,10 @@ a {
     gap: 1.5em;
     align-items: center;
     font-size: 1.5rem;
-    font-weight: var(--medium-font-weight);
+    font-weight: var(--bd-font-weight);
+    text-transform: uppercase;
     display: flex;
+    letter-spacing: 0.2rem;
 }
 
 .main-links a:hover {
@@ -178,7 +187,7 @@ a {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1317px){
     .main-links {
         display: none;
     }
