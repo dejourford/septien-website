@@ -101,10 +101,11 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 2em;
-    padding: 2em;
+    padding: 1em 2em;
     background: white;
     position: fixed;
     width: 100%;
+    z-index: 9999999;
 }
 
 
@@ -112,7 +113,7 @@ a {
     color: black;
     gap: 1.5em;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: var(--bd-font-weight);
     text-transform: uppercase;
     display: flex;
@@ -129,7 +130,15 @@ a {
 }
 
 /* HERO SECTION */
-
+.hero {
+    background-attachment: fixed;
+    background-image: url('images/dance-background.jpg');
+    height: 100dvh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 
 #hero-text {
@@ -149,6 +158,10 @@ a {
     object-fit: cover;
 }
 
+/* ABOUT SECTION */
+.about {
+    height: 100vh;
+}
 
 
 
