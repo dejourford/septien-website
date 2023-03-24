@@ -187,10 +187,10 @@ h1 {
     content: '';
     background: white;
     border: 10px dashed red;
-    height: 600px;
+    height: 550px;
     width: 500px;
     position: absolute;
-    left: 100px;
+    left: 150px;
     z-index: -99;
     transform: rotate(20deg);
 }
@@ -206,6 +206,7 @@ h1 {
     display: flex;
     justify-content: center; 
     gap: 8em;
+    padding: 2em;
 }
 
 .about-text {
@@ -215,6 +216,8 @@ h1 {
     text-align: justify;
     line-height: 1.7rem;
     letter-spacing: 0.1rem;
+    width: 50vw;
+    z-index: 9999;
 }
 
 #linda {
@@ -284,63 +287,179 @@ h1 {
 }
 
 @media screen and (max-width: 1255px){
-    #hero-text {
-        font-size: 5.5rem;
+    h1 {
+        font-size: 7rem;
     }
 }
 
-@media screen and (max-width: 950px){
-    #hero-text {
-        font-size: 5rem;
+
+
+@media screen and (max-width: 1078px){
+    h1 {
+        font-size: 6.5rem;
         letter-spacing: 1.5rem;
     }
 
 }
 
-@media screen and (max-width: 800px){
-    #hero-text {
-        font-size: 4.5rem;
+@media screen and (max-width: 940px){
+    h1 {
+        font-size: 5.5rem;
         letter-spacing: 1.2rem;
     }
 
 
 }
 
-@media screen and (max-width: 700px){
-    #hero-text {
-        font-size: 4rem;
+@media screen and (max-width: 800px){
+    h1 {
+        font-size: 4.5rem;
         letter-spacing: 1rem;
+    }
+
+    .ballet {
+        
+        transform:scaleX(-1);
+        background-position: right;
+        
+        
     }
 }
 
-@media screen and (max-width: 602px){
-    #hero-text {
+@media screen and (max-width: 604px){
+    h1 {
         font-size: 3.5rem;
         letter-spacing: 1rem;
     }
 }
 
-@media screen and (max-width: 538px){
-    #hero-text {
+@media screen and (max-width: 548px){
+    h1 {
         font-size: 3.5rem;
-        letter-spacing: 0.3rem;
+        letter-spacing: 0.5rem;
     }
 }
 
-@media screen and (max-width: 440px){
-    #hero-text {
+@media screen and (max-width: 432px){
+    h1 {
         font-size: 3rem;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.3rem;
     }
 
     
 }
 
+
+@media screen and (max-width: 375px){
+    
+    .fa-xmark {
+        padding: 1em;
+    }
+}
+
+
 @media screen and (max-width: 368px){
-    #hero-text {
+    h1 {
         font-size: 3rem;
         letter-spacing: 0.1rem;
     }
-
    
 }
+
+
+@media screen and (max-width: 1700px){
+    .about-left::after {
+        display: none;  
+    }
+   
+}
+
+
+
+@media screen and (max-width: 1629px){
+    .about-text {
+        padding: 2em 2em;
+        text-align:start;
+    }
+   
+}
+
+@media screen and (max-width: 394px){
+    #linda {
+        height: 600px;
+        width: 400px;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+   
+   
+}
+
+@media screen and (max-width: 350px){
+    #linda {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+   
+   
+}
+
+
+
+@media screen and (max-width: 1318px){
+    #linda {
+        height: 400px;
+        width: 250px;
+    }
+
+   
+   
+}
+
+@media screen and (max-width: 1157px){
+   .about-content {
+    gap: 1em;
+   }
+
+}
+
+@media screen and (max-width: 819px){
+    .about-left {
+        margin: 0 auto;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+       padding: 0;
+    }
+    .about-text {
+        width: 100%;
+    }
+ 
+ }
+
+ @media screen and (max-width: 375px){
+    
+ 
+    .about-header {
+        padding: 1em;
+    }
+
+
+    .about-text {
+        letter-spacing: normal;
+        padding: 2em 1em;
+    }
+ }
