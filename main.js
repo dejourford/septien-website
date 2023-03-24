@@ -53,7 +53,7 @@ window.onscroll = function (event) {
     
     const scroll = window.pageYOffset;
     
-    if (scroll == 0 || scroll < 800) {
+    if (scroll == 0 || scroll < 700) {
         // transparent
         mainNav.style.background = 'transparent';
         mainLinks.style.color = 'white'
