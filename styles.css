@@ -153,16 +153,26 @@ a {
     text-align: center;
 }
 
-.hero-img {
-    height: 100dvh;
-    width: 100%;
-    object-fit: cover;
+/* FEATURE SECTION */
+.ballet {
+    height: 100vh;
+    background-image: url(images/hero-image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:top;
 }
 
-/* ABOUT SECTION */
-.about {
+
+
+.microphone {
     height: 100vh;
+    background-image: url(images/microphone.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
+
+
 
 
 
