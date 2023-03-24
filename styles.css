@@ -47,7 +47,7 @@ a {
     background: black;
     height: 100dvh;
     width: 100%;
-    z-index: 9999;
+    z-index: 999999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +127,7 @@ a {
 .fa-bars-staggered {
     font-size: 2em;
     display: none;
+    color: black;
 }
 
 /* HERO SECTION */
@@ -207,11 +208,19 @@ a {
 
     .main-nav {
         justify-content: space-between;
+        background: transparent;
+    }
+
+    #logo {
+        display: none;
     }
 
     .fa-bars-staggered {
         display: block;
+        
     }
+
+    
 }
 
 @media screen and (max-width: 1255px){
@@ -263,6 +272,8 @@ a {
         font-size: 3rem;
         letter-spacing: 0.2rem;
     }
+
+    
 }
 
 @media screen and (max-width: 368px){
@@ -270,4 +281,6 @@ a {
         font-size: 3rem;
         letter-spacing: 0.1rem;
     }
+
+   
 }

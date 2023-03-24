@@ -1,7 +1,7 @@
 // NAV OPEN AND CLOSE
-const closeBtn = document.querySelector('.fa-xmark')
-const openBtn =  document.querySelector('.fa-bars-staggered')
+
 const mobileNav = document.querySelector('.mobile-nav')
+const heroSection = document.querySelector('.hero')
 
 closeMenu = () => {
     mobileNav.classList.remove('show')
@@ -11,6 +11,10 @@ closeMenu = () => {
 showMenu = () => {
     mobileNav.classList.remove('close')
     mobileNav.classList.add('show')
+}
+
+consoleLog = () => {
+    console.log('scroll')
 }
 
 // HERO TEXT EFFECT
