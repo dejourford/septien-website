@@ -138,7 +138,7 @@ a {
 .hero-text {
     background-attachment: fixed;
     background-image: url('images/dance-background.jpg');
-    height: 100dvh;
+    height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
