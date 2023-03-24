@@ -358,6 +358,10 @@ h1 {
     .fa-xmark {
         padding: 1em;
     }
+
+    .microphone, .ballet, .hero-text {
+        background-attachment: scroll;
+    }
 }
 
 
